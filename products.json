@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "iPhone 12 Pro",
+    "price": 1099.99
+  },
+  {
+    "id": 2,
+    "name": "Samsung Galaxy S21",
+    "price": 999.99
+  },
+  {
+    "id": 3,
+    "name": "Sony PlayStation 5",
+    "price": 499.99
+  },
+  {
+    "id": 4,
+    "name": "MacBook Pro 16",
+    "price": 2399.99
+  },
+  {
+    "id": 5,
+    "name": "xeaome note 8",
+    "price": 449.9
+  },
+  {
+    "id": 6,
+    "name": "iphon XR",
+    "price": 400
+  },
+  {
+    "id": 7,
+    "name": "iphone 11",
+    "price": 450,
+    "_id": "65e09754d2dbed083449686a",
+    "__v": 0
+  },
+  {
+    "id": 8,
+    "name": "huawei",
+    "price": 600.99,
+    "_id": "65e048a7219fdc4f62852206",
+    "__v": 0
+  }
+]
