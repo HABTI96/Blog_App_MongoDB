@@ -15,10 +15,11 @@ const verifyToken = (req, res, next)=>{
 		})
 }
 router.get("/", verifyToken, (req, res)=>{
-				res.send(`Hello ${req.user.name}\nyou have access to creat or update or delete products`)
+		res.send(`Hello ${req.user.user.name}\nyou have access to creat and update and delete products`)
+		// console.log(req.user.user)
 })
 router.get("/products/:id", verifyToken,getProductById)
-router.get("/products", verifyToken,getProducts)
+router.get("/products",getProducts)
 router.post("/products", verifyToken, creatProduct)
 router.put("/products/:id",verifyToken, updateProduct)
 router.delete("/products/:id", verifyToken, deletePorduct)

@@ -9,6 +9,7 @@ const getProducts = async (req, res)=>{
 const getProductById = async (req, res)=>{
     const id_url = req.params.id
     const findById = await ProductModel.find({id:id_url})
+    console.log(findById)
     if (findById[0]) res.send(findById)
     else return res.send("this product does not exist")
     console.log(findById)
@@ -27,10 +28,9 @@ const creatProduct = async (req, res)=>{
 const updateProduct = async (req, res)=>{
     const id_url = req.params.id
     const { name, price} = req.body
-    const prd = await ProductModel.updateOne({id: id_url},{$set:{name:name, price: price}})
-    if (prd.matchedCount) res.send("Updated")
+    const prd = await ProductModel.findOneAndUpdate({id: id_url},{$set:{name:name, price: price}})
+    if (prd) res.send("Updated")
     else return res.send("this product does not exist")
-    console.log(prd)
 }  
 
 const deletePorduct = async (req, res)=>{

@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json())
 
-// Routes
+//routes
 app.use('/auth', require('./routes/auth'));
 app.use('/user', require('./routes/postRoutes'));
 
